@@ -12,9 +12,9 @@ build/
 *.ipynb_checkpoints
 *.ipynb
 
-# Data files (too large for git — share via Zenodo / institutional storage)
-dataframes/
+# Intermediate / raw expanded dataframes (large — not tracked)
 temp_files_/
+dataframes/raw_df_*
 
 # VASP / DFT calculation files
 POSCAR*

@@ -122,8 +122,15 @@ plot_parity(results, filename="N2_parity.pdf")
 
 ## Data availability
 
-Raw DataFrames and DFT output files are not included in this repository due to size.  
-They are available on request — please open an issue or contact the authors.
+The cleaned input DataFrames used in the paper are included in `dataframes/`:
+
+| File | Molecule | Description |
+|---|---|---|
+| `input_df_N2_bandcenter_v1.csv` | N₂ | Cleaned features + adsorption energies |
+| `input_df_N2H_bandcenter_v1.csv` | N₂H | Cleaned features + adsorption energies |
+| `input_df_NH3_bandcenter_v1.csv` | NH₃ | Cleaned features + adsorption energies |
+
+Raw DFT output files (OUTCAR, vasprun.xml, ACF.dat, etc.) are available on request — please open an issue or contact the authors.
 
 ---
 

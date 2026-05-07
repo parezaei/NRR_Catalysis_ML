@@ -11,7 +11,7 @@
 
 ## Overview
 
-This repository contains the complete code used to produce the results in our paper on machine-learning prediction of adsorption energies for nitrogen reduction reaction (NRR) intermediates — **N₂, N₂H, NH₃, and H₂** — on transition metal alloy surfaces.
+This repository contains the complete code used to produce the results in our paper on machine-learning prediction of adsorption energies for nitrogen reduction reaction (NRR) intermediates — **N₂, N₂H, and NH₃** — on transition metal alloy surfaces.
 
 We combine density functional theory (DFT) calculations (VASP) with a systematic machine learning pipeline to predict adsorption energies from local structural and electronic descriptors extracted directly from the DFT outputs.
 

@@ -23,14 +23,12 @@ from nrr_ml.data_cleaning import clean_pipeline
 # ── Paths — edit these ────────────────────────────────────────────────────────
 RAW_DFS = {
     "N2":  "./dataframes/raw_df_N2_bandcenter_expanded_v5.csv",
-    "H2":  "./dataframes/raw_df_H2_bandcenter_expanded_v5.csv",
     "N2H": "./dataframes/raw_df_N2H_bandcenter_expanded_v5.csv",
     "NH3": "./dataframes/raw_df_NH3_bandcenter_expanded_v5.csv",
 }
 
 OUT_DFS = {
     "N2":  "./dataframes/input_df_N2_bandcenter_v1.csv",
-    "H2":  "./dataframes/input_df_H2_bandcenter_v1.csv",
     "N2H": "./dataframes/input_df_N2H_bandcenter_v1.csv",
     "NH3": "./dataframes/input_df_NH3_bandcenter_v1.csv",
 }

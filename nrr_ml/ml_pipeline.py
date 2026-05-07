@@ -157,7 +157,7 @@ def run_pipeline(df_raw,
                       'atomic_is_adsorbed', 'angle', 'orientation', 'ads_e',
                       'material', 'ad_site_number', 'mol', 'mol_elecneg',
                       'mol_cent_coord', 'mol_input_all_coords',
-                      'pre_N-N', 'pre_H-H', 'pre_N-H1', 'pre_N-H2', 'pre_N-H3']
+                      'pre_N-N', 'pre_N-H1', 'pre_N-H2', 'pre_N-H3']
     GLOBAL_FEATS      = [c for c in ['crystal_struct', 'sym_group'] if c in ALL_COLS]
     DOS_ORBITALS_KEEP = ('sband', 'pband', 'dband')
     SHELL_PROPS       = ['electroneg', 'atomic_number', 'cov_rad', 'elect_affinity',

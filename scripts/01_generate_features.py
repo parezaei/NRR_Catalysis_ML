@@ -17,14 +17,12 @@ from nrr_ml.features import add_dos_features
 # ── Paths — edit these ────────────────────────────────────────────────────────
 RAW_DFS = {
     "N2":  "./dataframes/raw_df_N2_bandcenter_expanded_v5.csv",
-    "H2":  "./dataframes/raw_df_H2_bandcenter_expanded_v5.csv",
     "N2H": "./dataframes/raw_df_N2H_bandcenter_expanded_v5.csv",
     "NH3": "./dataframes/raw_df_NH3_bandcenter_expanded_v5.csv",
 }
 
 OUT_DFS = {
     "N2":  "./dataframes/raw_df_N2_bandcenter_expanded_v5_dos.csv",
-    "H2":  "./dataframes/raw_df_H2_bandcenter_expanded_v5_dos.csv",
     "N2H": "./dataframes/raw_df_N2H_bandcenter_expanded_v5_dos.csv",
     "NH3": "./dataframes/raw_df_NH3_bandcenter_expanded_v5_dos.csv",
 }

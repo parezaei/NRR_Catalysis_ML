@@ -162,7 +162,7 @@ def classify_dissociation(
     Parameters
     ----------
     df_dict:
-        ``{'N2': df, 'H2': df, 'N2H': df, 'NH3': df}``.
+        ``{'N2': df, 'N2H': df, 'NH3': df}``.
     thresholds:
         Optional override dict; same structure as defaults.
 
@@ -171,7 +171,6 @@ def classify_dissociation(
     dict[str, pandas.DataFrame]
     """
     defaults: dict[str, dict] = {
-        "H2":  {"H-H": 1.00},
         "N2":  {"N-N": 1.30},
         "N2H": {"N-N": 1.45, "N-H1": 1.25},
         "NH3": {"N-H1": 1.25, "N-H2": 1.25, "N-H3": 1.25},
@@ -184,9 +183,7 @@ def classify_dissociation(
         df = df.copy()
         thresh = defaults.get(mol, {})
 
-        if mol == "H2":
-            df["is_dissociated"] = (df["post_H-H"] > thresh["H-H"]).astype(int)
-        elif mol == "N2":
+        if mol == "N2":
             df["is_dissociated"] = (df["post_N-N"] > thresh["N-N"]).astype(int)
         elif mol == "N2H":
             df["is_dissociated"] = (
@@ -232,7 +229,6 @@ def classify_adsorption(
     dict[str, pandas.DataFrame]
     """
     _dist_cols: dict[str, list[str]] = {
-        "H2":  ["H0-metal0_distance", "H1-metal0_distance"],
         "N2":  ["N0-metal0_distance", "N1-metal0_distance"],
         "N2H": ["N0-metal0_distance", "N1-metal0_distance", "H0-metal0_distance"],
         "NH3": ["N0-metal0_distance", "H0-metal0_distance",
@@ -358,7 +354,7 @@ def select_output_columns(
     df:
         Cleaned DataFrame.
     mol:
-        Molecule name (``'N2'``, ``'H2'``, ``'N2H'``, or ``'NH3'``).
+        Molecule name (``'N2'``, ``'N2H'``, or ``'NH3'``).
     n_neighbors:
         Maximum number of neighbour columns to retain.
 
@@ -369,7 +365,7 @@ def select_output_columns(
     initial = [
         "material", "ad_site_number", "crystal_struct", "sym_group",
         "mol", "mol_elecneg",
-        "pre_N-N", "pre_H-H", "pre_N-H1", "pre_N-H2", "pre_N-H3",
+        "pre_N-N", "pre_N-H1", "pre_N-H2", "pre_N-H3",
         "mol_cent_coord", "mol_input_all_coords",
     ]
     neighbor_cols = [
@@ -414,7 +410,7 @@ def clean_pipeline(
     Parameters
     ----------
     df_dict:
-        ``{'N2': df, 'H2': df, 'N2H': df, 'NH3': df}`` — raw expanded DataFrames.
+        ``{'N2': df, 'N2H': df, 'NH3': df}`` — raw expanded DataFrames.
     adsorption_threshold:
         Distance threshold (Å) for adsorption classification.
 

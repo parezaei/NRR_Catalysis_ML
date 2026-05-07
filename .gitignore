@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.ipynb
+
+# Data files (too large for git — share via Zenodo / institutional storage)
+dataframes/
+temp_files_/
+
+# VASP / DFT calculation files
+POSCAR*
+CONTCAR*
+OUTCAR*
+INCAR*
+KPOINTS*
+POTCAR*
+ACF.dat*
+vasprun.xml*
+*.xml
+CHG
+CHGCAR
+WAVECAR
+DOSCAR
+EIGENVAL
+
+# Generated figures (reproducible from scripts)
+paper_files/
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Environment
+.env
+.venv/
+env/
+venv/

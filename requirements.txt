@@ -1,0 +1,28 @@
+# Core scientific stack
+numpy>=1.23
+scipy>=1.9
+pandas>=1.5
+
+# Machine learning
+scikit-learn>=1.2
+xgboost>=1.7
+
+# Optional — install for TabPFN support
+# tabpfn>=0.1.5
+
+# Explainability
+shap>=0.42
+
+# DFT output parsing
+pymatgen>=2023.1.0
+
+# Visualisation
+matplotlib>=3.6
+seaborn>=0.12
+
+# Progress bars
+tqdm>=4.64
+
+# Jupyter (optional — for running notebooks)
+jupyter>=1.0
+ipykernel>=6.0

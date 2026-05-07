@@ -50,6 +50,8 @@ NRR_Catalysis_ML/
 
 ## Workflow
 
+![ML Workflow](figures/ML_workflow.png)
+
 ```
 VASP DFT calculations
         │
@@ -117,6 +119,24 @@ df = pd.read_csv("dataframes/input_df_N2_bandcenter_v1.csv")
 results = run_pipeline(df, outlier_method="z3", n_select_features=20)
 plot_parity(results, filename="N2_parity.pdf")
 ```
+
+---
+
+## Figures
+
+All figures from the paper are included in `figures/`:
+
+| File pattern | Description |
+|---|---|
+| `{mol}_k20_outlierz3_parity.pdf` | Parity plot (predicted vs. DFT) |
+| `{mol}_k20_outlierz3_cv_sweep.pdf` | CV R² across neighbour shells |
+| `{mol}_k20_outlierz3_heatmap.pdf` | Model × neighbour-shell R² heatmap |
+| `{mol}_k20_outlierz3_shaptest_*.pdf` | SHAP bar / beeswarm / dependence (test set) |
+| `{mol}_k20_outlierz3_shaptrain_*.pdf` | SHAP bar / beeswarm / dependence (train set) |
+| `beeswarm_features_beforeML_{mol}.pdf` | Feature distribution before ML |
+| `violin_plots_MoladsE_{mol}.pdf` | Adsorption energy distributions |
+| `avg_adsorption_distributions.pdf` | Average adsorption distributions |
+| `*_smoothed.png` | Smoothed PDOS for representative structures |
 
 ---
 

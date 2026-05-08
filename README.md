@@ -1,11 +1,11 @@
 # ML-Accelerated Prediction of NRR Intermediate Adsorption Energies on Alloy Surfaces
 
-[![Lab](https://img.shields.io/badge/Lab-Insilico%20Matters%20Laboratory-blue)](https://github.com/IMLKGH)
+[![Lab](https://img.shields.io/badge/Lab-Insilico%20Matters%20Laboratory-blue)](https://github.com/insilicomatters)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-green)](https://www.python.org/)
 
 **Author:** Parastoo Agharezaei  
 **Supervisor:** Prof. Kulbir K. Ghuman  
-**Laboratory:** [Insilico Matters Laboratory (IML)](https://github.com/IMLKGH) · INRS-EMT
+**Laboratory:** [Insilico Matters Laboratory (IML)](https://github.com/insilicomatters) · INRS-EMT
 
 ---
 

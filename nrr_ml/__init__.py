@@ -3,7 +3,7 @@ nrr_ml — Machine Learning for NRR Adsorption Energy Prediction
 ===============================================================
 Parastoo Agharezaei · Insilico Matters Laboratory (IML) · INRS-EMT
 Supervisor: Prof. Kulbir K. Ghuman
-https://github.com/IMLKGH
+https://github.com/insilicomatters
 """
 
 from . import vasp_io

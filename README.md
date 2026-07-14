@@ -89,7 +89,7 @@ scripts/03_run_ml_pipeline.py
 
 ```bash
 # 1. Clone
-git clone https://github.com/arzpa/NRR_Catalysis_ML.git
+git clone https://github.com/parezaei/NRR_Catalysis_ML.git
 cd NRR_Catalysis_ML
 
 # 2. Install dependencies
